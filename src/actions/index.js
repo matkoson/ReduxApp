@@ -1,6 +1,11 @@
 
 
 export function selectBook(book) {
-  console.log("Successful selection of ", book.title + ".");
 
+  return (
+    {
+      type: "BOOK_SELECTED",
+      payload: book
+    }
+  );
 }
